@@ -1,0 +1,106 @@
+img {
+    width: 100%;
+}
+body {
+    width: 100%;
+}
+h1 {
+    text-transform: uppercase;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 10px 10px;
+}
+
+.header-content_right {
+    display: flex;
+    align-items: center;
+}
+
+/* content */
+.content-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.content-box {
+    width: 25%;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.sort {
+    margin-right: 5px;
+}
+
+select {
+    border: 1px solid #e5e5e5;
+    max-width: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.content-box_img {
+    position: relative;
+}
+
+.main-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+}
+
+.main-img:hover {
+    opacity: 0;
+    transition: opacity 1s, transform 0.5s;
+    cursor: pointer;
+}
+
+.product-name {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.product-name::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.25s ease-out;
+}
+.product-name:hover::before {
+    width: 100%;
+}
+.product-price {
+    font-weight: bold;
+}
+.pagingnation {
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+.pagingnation li {
+    background-color:white;
+    padding: 15px;
+    display: inline-block;
+    color: black;
+    cursor: pointer;
+    border: 1px solid;
+}
+.pagingnation li:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+}
