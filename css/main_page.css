@@ -13,7 +13,7 @@ body{
 .container11{
     position: relative;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 5px;
 }
 .container11 img { 
     width: 100%;
@@ -22,7 +22,7 @@ body{
 .container11 .btn { 
     position: absolute;
     top: 50%; 
-    left: 1360px; 
+    left: 1350px; 
     transform: translate(-50%, -50%); 
     -ms-transform: translate(-50%, -50%); 
     background: rgba(0, 0, 0, 0.46);
@@ -39,10 +39,10 @@ body{
 } 
 .con1{
     position: relative;
-    width: 555px;
+    width: 100%;
 }
 .con1 img { 
-    width: 555px;
+    width: 100%;
     height: 555px;
     opacity: 0.65;
     
@@ -81,22 +81,29 @@ body{
 } 
 
 .cha{
+    width: 100%;
+    height: 600px;
+    background-color: #e9def3;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 170px;
+    /*flex-wrap: wrap;*/
+    margin-top: 15px;
+    margin-bottom: 30px;
+    
+    /* #e9def3; */
+    /*margin-left: 170px;*/
 }
-.con1{
-    justify-content: center;
-    margin: 30px;
-}
+
 
 .card {
     overflow: hidden;
     position: relative;
     display: inline-block;
     height: 555px;
-    width: 555px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2%;
+    background-color: #f7d8f6;
    
   }
   
@@ -122,7 +129,7 @@ body{
 .div4{
     position: relative;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 45px;
 }
 .div4 img { 
     width: 100%;
@@ -148,21 +155,25 @@ body{
      color: black;
 } 
 
-.product-item{
+/* .product-item{
     width: 365px;
     height: 750px;
 
-}
+} */
 
 
 img { vertical-align:middle; }
 .product-img {
     /*margin: 10px auto;*/
-    border: 1px solid #CCC;
-    width: 365px;
-    height: 605px;
+    border: 1px solid #610f05;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 28px;
+    width: 100%;
+    height: 590px;
     overflow: hidden;
     position: relative;
+    margin:2%;
 }
 .product-img img {
     max-width: 100%;
@@ -252,6 +263,7 @@ img { vertical-align:middle; }
     color: #171616;
     display: block;
     border: 1px solid rgb(210, 26, 26);
+    
 }
 .chu1{
     width: 100px;
@@ -273,6 +285,24 @@ img { vertical-align:middle; }
     padding-top: 10px;
 }
 .navicon:hover{
-    background-color: rgb(188, 215, 240);
-    color: #3f0b99;
+    background-color: rgb(244, 245, 246);
+    color: #020006;
+}
+
+.chuyen{
+    display: flex;
+    height: 900px;
+    gap: 45px;
+}
+.chuyen > div{
+    flex: 1;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: 870px 810px ;
+    transition:  all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+
+}
+.chuyen > div:hover{
+    flex: 4;
 }
